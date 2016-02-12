@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Trendy Flicks</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+
+    <!-- Label for the sort_order preference [CHAR LIMIT=30] -->
+    <string name="pref_sort_order_label">Sort Order</string>
+
+
+    <!-- Label for popuar movie [CHAR LIMIT=25] -->
+    <string name="pref_sort_order_label_popular">Popular</string>
+
+    <!-- Label for top rated movie [CHAR LIMIT=25] -->
+    <string name="pref_sort_order_label_top_rated">Top Rated</string>
+
+    <!-- Label for favorite movie [CHAR LIMIT=25] -->
+    <string name="pref_sort_order_label_favorite">Favorite</string>
+
+    <!-- Key name for sort_order in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_sort_order_key" translatable="false">sort</string>
+
+
+    <!-- Value in SharedPreferences for popular option [CHAR LIMIT=NONE] -->
+    <string name="pref_sort_order_popular" translatable="false">popularity</string>
+
+    <!-- Value in SharedPreferences for top rated option [CHAR LIMIT=NONE] -->
+    <string name="pref_sort_order_top_rated" translatable="false">vote_average</string>
+
+    <!-- Default order for sort_order preference [CHAR LIMIT=NONE] -->
+     <string name="pref_sort_order_default" translatable="false">popularity</string>
+
+
+    <!-- Value in SharedPreferences for popular option [CHAR LIMIT=NONE] -->
+    <string name="pref_sort_order_favorite" translatable="false">favorite</string>
+
+    <!-- Value in SharedPreferences for popular option [CHAR LIMIT=NONE] -->
+    <string name="pref_favorite_movies" translatable="false">com.example.android.trendyflicks.PREFERENCE_FAVORITE_MOVIES</string>
+
+    <!-- Value in SharedPreferences for popular option [CHAR LIMIT=NONE] -->
+    <string name="pref_type_of_pane" translatable="false">com.example.android.trendyflicks.PREFERENCE_TYPE_OF_PANE</string>
+    <!-- Value in SharedPreferences for popular option [CHAR LIMIT=NONE] -->
+   <!-- <string name="pref_sort_order_popular" translatable="false">popular</string> -->
+
+    <!-- Value in SharedPreferences for top rated option [CHAR LIMIT=NONE] -->
+    <!-- <string name="pref_sort_order_top_rated" translatable="false">top_rated</string> -->
+
+    <!-- Default order for sort_order preference [CHAR LIMIT=NONE] -->
+    <!-- <string name="pref_sort_order_default" translatable="false">popular</string> -->
+
+    <!-- Menu label to fetch updated weather info from the server -->
+    <string name="action_refresh" translatable="false">Refresh</string>
+</resources>
