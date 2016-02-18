@@ -231,6 +231,7 @@ public class SplashScreen extends Activity {
         String[] resultStrs = new String[movieResultArray.length()];
         DownloadBitmapImages downloadImage = new DownloadBitmapImages(contextResources);
         downloadImage.clearMovieIds();
+        downloadImage.clearMoviePosterAndIds();
         MovieDetailsForDisplay detailsForDisplay = new MovieDetailsForDisplay();
         detailsForDisplay.clearMovieDetails();
         Log.i(LOG_TAG, "movieResultArray " + movieResultArray);
@@ -255,7 +256,7 @@ public class SplashScreen extends Activity {
             id = movieInfo.getString(TMDB_ID);
             title = movieInfo.getString(TMDB_TITLE);
 
-            downloadImage.downloadImage( id,poster);
+            downloadImage.setMoviePosterAndIds(id,poster);
 
 
             resultStrs[i] = id + ";" + poster + ";" + overview + ";" + userRating + ";" + releaseDate+";" + title;

@@ -22,6 +22,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -94,7 +96,7 @@ public class MovieDetailActivity extends AppCompatActivity {
             String newString = null;
             int position;
             String key = null;
-
+            String image = null;
 
             Log.i(LOG_TAG, "TwoPane  " + MainActivity.mTwoPane);
                 if (MainActivity.mTwoPane) {
@@ -107,6 +109,10 @@ public class MovieDetailActivity extends AppCompatActivity {
                         Log.i(LOG_TAG, "mMovieDetailsList newString" + newString);
                         Log.i(LOG_TAG, "mMovieDetailsList key" + key);
                     }
+                    if(!MainActivityMovieFragment.mMovieDetailImage.isEmpty()){
+                        MainActivityMovieFragment.mMovieDetailImage.entrySet().iterator().next();
+                        image = MainActivityMovieFragment.mMovieDetailImage.entrySet().iterator().next().getValue();
+                    }
                 }else {
 
                     Intent intent = getActivity().getIntent();
@@ -116,19 +122,22 @@ public class MovieDetailActivity extends AppCompatActivity {
                             newString = null;
                             position = 0;
                             key = null;
+                            image = null;
                         } else {
                             newString = extras.getString("movieDetails");
                             position = extras.getInt("position");
                             key = extras.getString("key");
+                            image = extras.getString("image");
                         }
                     } else {
                         newString = (String) savedInstanceState.getSerializable("movieDetails");
                         position = (int) savedInstanceState.getSerializable("position");
                         key = (String) savedInstanceState.getSerializable("key");
+                        image = (String) savedInstanceState.getSerializable("image");
                     }
                 }
 
-
+            Log.i(LOG_TAG, "image in Movie Detail Activity " + image);
 
             //get image
             // id + poster + " - " + overview + " - " + userRating + " - " + releaseDate ;
@@ -149,28 +158,28 @@ public class MovieDetailActivity extends AppCompatActivity {
                     " overview- " + overView + " userRating- " + userRating + " releaseDate- " + releaseDate);
             //Log.i(LOG_TAG, "position in the details view " + "- " + position);
 
-            DownloadBitmapImages image = new DownloadBitmapImages(this.getResources());
+           // DownloadBitmapImages image = new DownloadBitmapImages(this.getResources());
 
-            Log.i(LOG_TAG, "movieImageIdsQueue SIZE " + image.getMovieIds().size());
+           //Log.i(LOG_TAG, "movieImageIdsQueue SIZE " + image.getMovieIds().size());
 
             ImageView imageView = (ImageView) rootView.findViewById(R.id.SingleView);
 
-            android.view.ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
+           // android.view.ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
            // layoutParams.width = 500;
            // layoutParams.height = 700;
             //  layoutParams.width = 300;
             //  layoutParams.height = 500;
-              layoutParams.width = 200;
-              layoutParams.height = 400;
+          //    layoutParams.width = 200;
+            //  layoutParams.height = 400;
 
-            imageView.setLayoutParams(layoutParams);
+            //imageView.setLayoutParams(layoutParams);
 
             Log.i(LOG_TAG, "id VALUE " + id);
             //Log.i(LOG_TAG, "imageDrawable " + image.getMovieIds().get(position));
 
 
-            imageView.setImageDrawable(image.getMovieIds().get(key));
-
+            //imageView.setImageDrawable(image.getMovieIds().get(key));
+            Picasso.with(getContext()).load(image).into(imageView);
             //set text
             TextView txtMovieID, txtOverview, txtUserRating, txtReleaseDate, txtTitle,txtTrailerLabel, txtOverviewLabel;
 

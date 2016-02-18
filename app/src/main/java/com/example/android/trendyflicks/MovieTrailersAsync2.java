@@ -52,21 +52,25 @@ public class MovieTrailersAsync2 extends AsyncTask<ArrayList<String>, Void, Void
         ArrayList<String> trailerNames = new ArrayList<String>();
         //use id to get value hash map
         HashMap<String,String> trailerNameMap = mMovieTrailers.get(id);
-        Log.i(LOG_TAG, "trailerNameMap size - " + trailerNameMap.size());
-        //loop through hash map and get Keys
-            for(String name: trailerNameMap.keySet()){
-                trailerNames.add(name);
-            }
+       if(trailerNameMap.size()> 0) {
+           Log.i(LOG_TAG, "trailerNameMap size - " + trailerNameMap.size());
+
+           //loop through hash map and get Keys
+           for (String name : trailerNameMap.keySet()) {
+               trailerNames.add(name);
+           }
+       }
         return trailerNames;
     }
     public ArrayList<String> getTrailerLinks(String id){
         ArrayList<String> trailerLinks = new ArrayList<String>();
         HashMap<String,String> trailerLinksMap=mMovieTrailers.get(id);
-        Log.i(LOG_TAG, "trailerLinksMap size - " + trailerLinksMap.size());
-        for(String link: trailerLinksMap.values()){
-            trailerLinks.add(link);
+        if(trailerLinksMap.size()>0) {
+            Log.i(LOG_TAG, "trailerLinksMap size - " + trailerLinksMap.size());
+            for (String link : trailerLinksMap.values()) {
+                trailerLinks.add(link);
+            }
         }
-
         return trailerLinks;
 
     }

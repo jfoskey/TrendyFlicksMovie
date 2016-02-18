@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\pre-dexed\release\internal_impl-23.0.1-a45528e90eaa1c470ee37450bbfb213e075ae656.jar" />
+    </item>
+    <item
         jar="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -9,18 +16,11 @@
         <dex dex="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\pre-dexed\release\classes-051d1a5c62e821d4ceeef8446a6c3ad2a23167dd.jar" />
     </item>
     <item
-        jar="C:\Users\Jerma_000\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jar="C:\Users\Jerma_000\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.3.2\d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27\picasso-2.3.2.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\pre-dexed\release\support-annotations-23.0.1-637e2cde875b87dfa1a054542a4bbca52d81e2a1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\pre-dexed\release\internal_impl-23.0.1-a45528e90eaa1c470ee37450bbfb213e075ae656.jar" />
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\pre-dexed\debug\picasso-2.3.2-33b5f88926cc401f83416bb08e8cc0ea61b3cfbf.jar" />
     </item>
     <item
         jar="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
@@ -35,6 +35,13 @@
         revision="23.0.2"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
         <dex dex="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\pre-dexed\release\classes-f0c0a0e353b67ffa43aa1ee378c4468a05863a4f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jerma_000\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Jerma_000\Documents\GitHub\TrendyFlicksMovie\TrendyFlicksMovie\app\build\intermediates\pre-dexed\release\support-annotations-23.0.1-637e2cde875b87dfa1a054542a4bbca52d81e2a1.jar" />
     </item>
 
 </items>

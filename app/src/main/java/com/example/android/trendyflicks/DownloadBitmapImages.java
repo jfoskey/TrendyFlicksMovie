@@ -25,7 +25,7 @@ import java.util.Set;
  */
 public class DownloadBitmapImages {
     private static LinkedHashMap<String ,Drawable> mMovieImageIdsList = new LinkedHashMap<String, Drawable>();
-
+    private static LinkedHashMap<String ,String> mMoviePosterAndIdsList = new LinkedHashMap<String, String>();
     private ProgressDialog progressDialog;
     private Bitmap bitmap = null;
     private final String LOG_TAG = DownloadBitmapImages.class.getSimpleName();
@@ -36,6 +36,23 @@ public class DownloadBitmapImages {
         contextResources = resources;
 
     }
+
+    public void setMoviePosterAndIds(String id, String posterImage){
+        final String movieId = id;
+        final String url = imageURL +  posterImage;
+        mMoviePosterAndIdsList.put(movieId, url);
+    }
+
+    public void clearMoviePosterAndIds(){
+
+        mMoviePosterAndIdsList.clear();
+
+    }
+
+    public LinkedHashMap<String , String> getMoviePosterAndIdsList(){
+        return mMoviePosterAndIdsList;
+    }
+
     public void  downloadImage(String id, String posterImage) {
 
         final String url = imageURL +  posterImage;

@@ -188,6 +188,7 @@ public class FetchMovieInfoUpdate extends AsyncTask<String, Void, String[]> {
         downloadImage.clearMovieIds();
         MovieDetailsForDisplay detailsForDisplay = new MovieDetailsForDisplay();
         detailsForDisplay.clearMovieDetails();
+        downloadImage.clearMoviePosterAndIds();
         Log.i(LOG_TAG, "movieResultArray " + movieResultArray);
         for(int i = 0; i < movieResultArray.length(); i++) {
 
@@ -213,8 +214,8 @@ public class FetchMovieInfoUpdate extends AsyncTask<String, Void, String[]> {
             // "temp" when working with temperature.  It confuses everybody.
 
 
-            downloadImage.downloadImage( id,poster);
-
+            //downloadImage.downloadImage( id,poster);
+            downloadImage.setMoviePosterAndIds(id,poster);
 
             resultStrs[i] = id + ";" + poster + ";" + overview + ";" + userRating + ";" + releaseDate+";" + title;
             Log.i(LOG_TAG, "resultStrs " + resultStrs[i]);

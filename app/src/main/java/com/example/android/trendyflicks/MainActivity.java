@@ -122,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
         String movieSortOrder = Utility.getPreferredMovieSortOrder(this );
         // update the movie in our second pane using the fragment manager
+        Log.i(LOG_TAG, "Application stored sortOrder - " +mMovieSortOrder + " Preference sort Order - "+ movieSortOrder);
         if (movieSortOrder != null && !movieSortOrder.equals(mMovieSortOrder)) {
             Log.i(LOG_TAG, "Sort order changed from " + mMovieSortOrder+ " to "+ movieSortOrder );
            MainActivityMovieFragment mamf = (MainActivityMovieFragment)getSupportFragmentManager().findFragmentById(R.id.container);
